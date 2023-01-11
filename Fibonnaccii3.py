@@ -1,18 +1,18 @@
-# Use generator
-# n = int(input("Write something:"))
-# def fib(n):
-#     a = 1
-#     b = 0
-#     for item in range(n):
-#         c = a + b
-#         a = b
-#         b = c
-#         yield b
-# for k in fib(n):
-#     print(k)
+####################
+n = int(input("Write something:"))
+def fib(n):
+    a = 1
+    b = 0
+    for item in range(n):
+        c = a + b
+        a = b
+        b = c
+        yield b
+for k in fib(n):
+    value = k
+print(value)
 
-
-#Use iterator
+#####################
 # class MyIterator:
 #
 #     def __init__(self, max= 10000):
@@ -39,7 +39,7 @@
 # look = list(MyIterator(n))
 # print(look[-1])
 #
-# # #Use Recursion
+#####################
 # def fibonacci(n):
 #     if n < 2:
 #         return n
@@ -48,7 +48,7 @@
 # c = fibonacci(n)
 # print(c)
 #
-# #fakturial
+#####################
 # def fakturial(n):
 #     if n < 1:
 #         return 1
